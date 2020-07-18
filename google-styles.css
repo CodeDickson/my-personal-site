@@ -1,0 +1,159 @@
+html,body{
+
+    background-color: white;
+    font-size: 16px;
+    height: 100vh;
+}
+
+/* Styles for main text*/
+h1{
+
+    text-align: center;
+    font-size: 3.5em;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 20%;
+    
+}
+
+
+h1::before, p::before {
+  content: "<>";
+  padding: 10px;
+  margin-right: 10px;
+  background-color: rgba(236, 235, 235, 0.705);
+  border-radius: 1em;
+
+}
+
+
+h1::after, p::after{
+    content: "</>";
+    padding: 10px;
+    margin-right: 10px;
+    background-color: rgb(236, 235, 235);
+    border-radius: 1em;
+  }
+
+ 
+
+/* Styling individual letters in the main text body*/
+
+span:nth-child(1), span:nth-child(5) {
+
+    color: rgb(27, 115, 197);
+}
+
+span:nth-child(2), span:nth-child(7) {
+
+    color: rgb(197, 26, 26);
+}
+
+span:nth-child(3) {
+
+    color: rgb(248, 226, 29);
+}
+
+
+span:nth-child(4), span:nth-child(6) {
+
+    color: rgb(9, 122, 9);
+}
+
+/*search bar*/
+form {
+
+    text-align: center;
+    font-size: 3.5em;
+    font-family: 'Ubuntu', sans-serif;
+   
+}
+
+
+
+input {
+    height: 40px;
+    width: 700px;
+    border-radius: 1em;
+    border: 0;
+    border: 1px solid rgb(9, 122, 9);
+}
+
+
+input:hover {
+
+    width: 800px;
+}
+
+p {
+
+    text-align: center;
+    font-size: 18px;
+}
+
+::placeholder{
+
+    color: rgb(255, 7, 7);
+}
+
+input.search{
+
+    caret-color: red;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Styles for form field*/
+
+
+
+/*
+.red{
+
+    color: red;
+
+}
+
+.green{
+
+    color: green;
+
+}
+
+.yellow {
+
+    color: yellow;
+}
+
+.blue {
+
+     color: blue;
+}
+
+*/
+
+
+
+/* Rating the rules on the stylesheet 
+
+ 1 0 0 0
+
+Inline styles (Thousands) 1000
+
+1d selectors (Hundreds) 100
+
+Class selectors, pseudo classes, attribute selector (Tens) 10
+
+ a[href ="www.google.com"] {
+
+ }
+
+Element selectors, pseudo elements (ones)0
+
+ h1 > p {
+
+ }
+
+ Note: The universal selector (*), combinators (+, >, ~, ' '), and negation pseudo-class (:not) have no effect on specificity.
+
+
+*/
